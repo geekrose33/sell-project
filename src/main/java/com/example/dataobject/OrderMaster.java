@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.math.BigDecimal;
 
 /**
  * @author Joker_Dong
@@ -30,5 +31,22 @@ public class OrderMaster {
         买家名字
     */
     private String buyerName;
-    
+
+    /*
+        商品名称
+    */
+    private String productName;
+    /*
+        商品价格
+    */
+    private BigDecimal productPrice;
+    /*
+        商品数量
+    */
+    private int productQuantity;
+    /*
+        商品Id
+    */
+    private String productID;
+
 }
